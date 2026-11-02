@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>支持与常见问题 · 充电管家</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 20px 64px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro SC", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+    background: #f2f3f6; color: #101216; line-height: 1.75;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  .card {
+    background: #fff; border: 1px solid #e3e6eb; border-radius: 24px;
+    padding: 28px 26px; box-shadow: 0 8px 24px rgba(0,0,0,.05);
+  }
+  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -.5px; }
+  .meta { color: #69707c; font-size: 13px; margin-bottom: 22px; }
+  h2 { font-size: 18px; margin: 26px 0 8px; }
+  p, li { font-size: 15px; color: #333842; }
+  ul { padding-left: 22px; }
+  a { color: #d21f2b; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .note {
+    background: #f7f8fa; border-radius: 14px; padding: 14px 16px;
+    color: #525965; font-size: 13px; margin: 18px 0;
+  }
+  .contact {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #d21f2b; color: #fff; padding: 10px 16px;
+    border-radius: 999px; font-weight: 600; font-size: 14px;
+  }
+  .contact:hover { text-decoration: none; opacity: .9; }
+  .links { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 28px; font-size: 13px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #08090b; color: #f7f8fa; }
+    .card { background: #14161b; border-color: #252932; box-shadow: none; }
+    p, li { color: #c9ced7; }
+    .meta, .note { color: #9ba2ae; }
+    .note { background: #1f2229; }
+    a { color: #ff5a63; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>支持与常见问题</h1>
+    <div class="meta">充电管家 · 版本 1.2 · 适用于 iPhone（iOS 17+）</div>
+
+    <p>如果 App 没有按预期工作，或你有功能建议，请通过 GitHub Issues 联系。提交时请附上：iPhone 型号、iOS 版本、App 版本（设置 → 关于）、问题描述和截图（可遮住个人信息）。</p>
+
+    <p><a class="contact" href="https://github.com/Inspiring26/Tesla_Charge/issues" target="_blank" rel="noopener">提交 GitHub Issue</a></p>
+
+    <h2>1. 剩余续航和充电上限怎么用？</h2>
+    <p>在「充电」页输入车机显示的剩余续航，选择 80%–100% 的充电上限。App 会以 00:00–06:30 为充电窗口，算出在 06:30 前达到上限所需的整数电流。把车机的充电电流和充电上限设为相同数值即可。</p>
+
+    <h2>2. 为什么 App 算出的电流和车机实际不一样？</h2>
+    <ul>
+      <li>App 按「标称容量 ÷ 新车满电表显」估算每公里能耗，车机实际能耗会受温度、路况、空调影响。</li>
+      <li>充电效率默认 90%，实际家用桩可能在 88%–92%，可在设置中调整。</li>
+      <li>电池接近满电时会进入涓流，实际充满时间可能比计算略长。</li>
+      <li>车机的充电上限和电流需要你手动设置成 App 建议的值。</li>
+    </ul>
+
+    <h2>3. “当前满电表显”填 403 还是 435？</h2>
+    <p>填「充满电时车机显示的续航」，也就是表显上限。新车约 435 km；如果现在充满只显示 403 km，就填 403，健康度会显示 403 ÷ 435 = 92.6%。如果你说的 403 是当天剩余续航，请把当前满电表显改为 435。</p>
+
+    <h2>4. 健康度和衰减对比是官方数据吗？</h2>
+    <p>不是。健康度是按表显上限相对新车表显估算的；衰减对比是简化的日历老化 + 循环老化模型，用于比较不同充电习惯的相对趋势，不代表特斯拉官方电池检测结果。</p>
+
+    <h2>5. 打赏（内购）相关</h2>
+    <ul>
+      <li>「请我喝杯咖啡」是可选的消耗型内购，通过 Apple 完成付款，不解锁任何功能。</li>
+      <li>如果显示“内购暂时不可用”，请先确认网络正常、App 是最新版本，并稍后再试。</li>
+      <li>消耗型内购没有“恢复购买”；重复支持会重复扣款，请按需操作。</li>
+      <li>退款由 Apple 处理，可在 <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> 申请。</li>
+    </ul>
+
+    <h2>6. 数据会上传吗？需要联网吗？</h2>
+    <p>不会上传。车辆参数、健康记录和对比方案只保存在本机；卸载 App 会清除。计算、记录和对比都不需要网络；只有可选的 Apple 内购会连接 App Store。</p>
+
+    <h2>7. 支持哪些车型？</h2>
+    <p>默认按特斯拉 Model Y 60 kWh、EPA 表显 435 km 设计，也可以在设置里改成其他容量和表显。App 是通用计算工具，不读取车辆数据，也不控制车辆。</p>
+
+    <div class="note">
+      本 App 为个人开发的本地工具，与特斯拉公司无关联。Tesla、Model Y 是 Tesla, Inc. 的商标，仅用于说明兼容车型。
+    </div>
+
+    <div class="links">
+      <a href="./index.html">返回首页</a>
+      <a href="./privacy.html">隐私政策</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
